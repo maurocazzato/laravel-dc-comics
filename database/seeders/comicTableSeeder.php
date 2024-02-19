@@ -9,14 +9,9 @@ use App\models\comic;
 
 class comicTableSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
-    
+
     public function run()
     {
-        \App\Models\comic::factory(20)->count(100)->create();
+        \App\Models\comic::factory()->count(100)->create();
     }
 }

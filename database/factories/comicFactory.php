@@ -2,25 +2,20 @@
 
 namespace Database\Factories;
 
+use App\Models\comic;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-/**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\comic>
- */
+
 class comicFactory extends Factory
 {
-    /**
-     * Define the model's default state.
-     *
-     * @return array<string, mixed>
-     */
+    protected $model = comic::class;
+
     public function definition()
     {
         return [
-            "title" => fake() ->words (3, true),
-            "description" => fake() -> sentence(),
-            "prize" => fake() -> numberBetween(5,500),
-            
+            'title' => $this->faker->words (3, true),
+            'description' => $this->faker->sentence(),
+            'price' => $this->faker->numberBetween(5,500),
         ];
     }
 }
