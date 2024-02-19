@@ -1,3 +1,82 @@
 @import "~bootstrap/scss/bootstrap";
 
+.headercontainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 20px;
+}
+
+.logocontainer img {
+    max-height: 60px;
+}
+
+.menucontainer ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menucontainer li {
+    margin-right: 20px;
+}
+
+.menucontainer a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.menucontainer .menulink {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menucontainer .menulink:hover {
+    color: rgba(2, 130, 249, 255);
+}
+
+
+// jumbo
+
+.backgroundbox {
+    height: 300px;
+    background-image: url('/resources/imgs/jumbotron.jpg');
+    background-size: cover;
+   
+}
+
+//listblue
+.listblu {
+    background-color: rgba(2, 130, 249, 255);
+    display: flex;
+}
+
+.listblu h3 {
+    font-size: 10px;
+    color: white;
+}
+
+.listblu .listitem {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    float: left;
+    padding: 30px;
+}
+
+.listblu .itemimage {
+    max-width: 40px;
+    max-height: 50px;
+    margin-right: 20px;
+}
+
+.small-font {
+    font-size: 0.7rem;
+}
 
