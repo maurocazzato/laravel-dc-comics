@@ -14,8 +14,9 @@ class comicTableSeeder extends Seeder
      *
      * @return void
      */
+    
     public function run()
     {
-        comic :: factory(20) -> count(100) -> create();
+        \App\Models\comic::factory(20)->count(100)->create();
     }
 }
