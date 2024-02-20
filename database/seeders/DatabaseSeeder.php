@@ -8,7 +8,7 @@ class DatabaseSeeder extends Seeder
   
     public function run()
     {
-        \App\Models\comic::factory(20)->count(100)->create();
+        \App\Models\comic::factory()->count(100)->create();
 
     }
 }
