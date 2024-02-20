@@ -1,21 +1,14 @@
 <?php
 
-namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
-    /**
-     * Seed the application's database.
-     *
-     * @return void
-     */
+  
     public function run()
     {
-       $this -> call([
-        comicTableSeeder :: class
-       ]);
+        \App\Models\comic::factory(20)->count(100)->create();
+
     }
 }
